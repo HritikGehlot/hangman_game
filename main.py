@@ -17,6 +17,10 @@ while not game_over:
     print(f"Total no of lives remaining: {lives}")
     
     user_input = input("Guess a letter: ").lower()
+    
+    if user_input in display:
+        print(f"Please enter another letter {user_input} already exist")              
+    
      
     display = ""
 
@@ -39,9 +43,6 @@ while not game_over:
     if not user_input in display:
         lives-=1
 
-    if user_input in display:
-        print("Please enter another letter")              
-    
     if not "_" in display:
         game_over = True
         hangman_art.won()
