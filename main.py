@@ -50,7 +50,8 @@ while not game_over:
         game_over = True
         print(hangman_art.stages[-1]) 
         hangman_art.lose()
-        print("Game over hangman died")   
+        print("Game over hangman died")  
+        print(f"Correct word was{random_letter}")   
 
 
     print(display)
