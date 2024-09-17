@@ -18,7 +18,7 @@ while not game_over:
     
     user_input = input("Guess a letter: ").lower()
     
-    if user_input in display:
+    if user_input in correct_letter:
         print(f"Please enter another letter {user_input} already exist")              
     
      
